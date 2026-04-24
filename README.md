@@ -46,10 +46,6 @@ This design demonstrates key Communication 2 concepts such as signal transmissio
 
 <img width="1113" height="1280" alt="image" src="https://github.com/user-attachments/assets/ad88ae38-ad1c-4f93-99dc-4b3b0e478cbe" />
 
-<p align="center">
-  <img src="images/rc_prototype.jpg" width="500">
-</p>
-
 <p align="justify">
 The image above shows the fully assembled remote‑controlled robotic system. All electronic components are mounted on a compact metal chassis with a low center of gravity to provide mechanical stability. The layout allows efficient wiring, reliable power delivery, and proper signal interfacing between communication and control modules.
 </p>
@@ -57,10 +53,8 @@ The image above shows the fully assembled remote‑controlled robotic system. Al
 ---
 
 ### Actual Weight Measurement
+<img width="845" height="1280" alt="image" src="https://github.com/user-attachments/assets/1b45f862-157c-44b7-b7f7-8001fca7df70" />
 
-<p align="center">
-  <img src="images/rc_weight_measurement.jpg" width="500">
-</p>
 
 <p align="justify">
 The image above shows the actual weight measurement of the completed system using a digital weighing scale. The recorded weight of the robot is <strong>475 grams</strong>. This measurement includes the chassis, microcontroller, motor driver, Bluetooth module, voltage regulator, battery, and all associated wiring in their fully operational configuration.
