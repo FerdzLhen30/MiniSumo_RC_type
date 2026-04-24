@@ -1,76 +1,79 @@
-# MiniSumo_RC_type
-A Communication 2 course project demonstrating an embedded control and wireless communication system using an Arduino Nano, BLE Bluetooth module, and motor driver integration.
-# Autonomous Communication System Project
+# Embedded Wireless Communication System
 
 ## 📌 Overview
 
 <p align="justify">
-<strong>Purpose:</strong> This project was developed as a major course requirement for the subject <strong>Communication 2</strong>. It is designed to apply theoretical concepts of modulation, signal transmission, control, and system integration into a practical hardware‑based implementation.
+<strong>Purpose:</strong> This project was developed as a major course requirement for the subject <strong>Communication 2</strong>. The objective is to apply fundamental communication and control concepts through the implementation of an embedded wireless system.
 </p>
 
 <p align="justify">
-The project implements a compact embedded communication and control system using a microcontroller‑based platform. It emphasizes the practical use of electronic communication principles such as signal interfacing, power regulation, control signaling, and wireless data transmission. The system demonstrates how communication concepts are translated into real‑world applications using embedded hardware.
+The system is a compact remote‑controlled robotic platform that demonstrates practical use of serial communication, wireless data transmission, power regulation, and actuator control. It integrates a microcontroller, motor driver, power management circuitry, and a Bluetooth Low Energy (BLE) module to convert wireless control signals into physical motion.
 </p>
 
 <p align="justify">
-An Arduino Nano microcontroller serves as the central processing unit, handling control signals and communication tasks. Motor control is implemented through a TB66FNG dual motor driver paired with JGA25 DC motors, demonstrating signal control and power amplification concepts. A 2‑cell Li‑Po battery supplies the system, while a step‑down voltage regulator ensures stable voltage levels for logic and communication modules. Wireless communication is incorporated using a BLE Bluetooth module, enabling serial data transmission, remote control, and system monitoring.
+An Arduino Nano serves as the central controller, processing incoming wireless commands and generating control signals for motor actuation. Power is supplied using a 2‑cell lithium‑polymer (Li‑Po) battery regulated through a step‑down voltage converter to ensure safe and stable operation of the electronics. This project highlights the relationship between communication signals and real‑world system behavior, fulfilling the learning outcomes of the Communication 2 subject.
 </p>
 
 ---
 
-## Table of Contents
-- Part 1: System Planning  
-- Part 2: Hardware and Communication Components  
-- Part 3: Control and Communication Strategy  
+## 🔧 Hardware Components
 
----
-
-## Part 1: System Planning
-
-<p align="justify">
-The planning phase focuses on applying Communication 2 concepts to the design of a complete embedded system. This stage defines the interaction between power electronics, control signals, and wireless communication modules while ensuring electrical compatibility and stable operation.
-</p>
-
-<p align="justify">
-Careful planning was conducted to select components suitable for signal processing, motor actuation, and wireless data transmission. The Arduino Nano was chosen for its compact size and UART communication capability, while the BLE Bluetooth module was selected to demonstrate short‑range wireless communication. Power management and signal integrity were considered to avoid voltage instability and communication errors.
-</p>
-
-<p align="justify">
-This phase also defines the system’s operational flow, including command transmission, signal interpretation, and actuator response. By organizing the communication and control structure early in the design, the system ensures reliable performance and clear demonstration of communication principles covered in the subject.
-</p>
-
----
-
-## Part 2: Hardware and Communication Components
-
-### 2.1 Components Used
 - Arduino Nano microcontroller  
 - JGA25 DC motors  
 - TB66FNG dual motor driver  
-- 2‑cell Li‑Po battery  
-- Step‑down voltage regulator  
-- BLE Bluetooth module  
+- BLE Bluetooth communication module  
+- 2‑cell Li‑Po battery (6–7.4 V)  
+- DC‑DC step‑down voltage regulator  
+- Metal chassis  
+
+---
+
+## ⚙️ Communication and Control Concept
 
 <p align="justify">
-Each component was selected to illustrate core communication system concepts such as signal transmission, voltage regulation, and data interfacing. The BLE module enables serial communication over a wireless medium, while the motor driver converts low‑power control signals into high‑power outputs.
+Wireless commands are transmitted from an external controller to the robot via the BLE Bluetooth module using serial (UART) communication. The Arduino Nano decodes the received data and generates Pulse Width Modulation (PWM) signals to control the speed and direction of the DC motors through the motor driver.
+</p>
+
+<p align="justify">
+This design demonstrates key Communication 2 concepts such as signal transmission, modulation using PWM, digital data decoding, and signal amplification for actuator control.
 </p>
 
 ---
 
-## Part 3: Control and Communication Strategy
+## 📷 System Implementation
 
-<p align="justify">
-The control strategy is based on serial communication between the BLE Bluetooth module and the Arduino Nano. Commands are transmitted wirelessly and decoded by the microcontroller, which then generates appropriate control signals for motor actuation. Pulse Width Modulation (PWM) is used to regulate motor speed, demonstrating signal modulation techniques discussed in Communication 2.
+### RC Prototype
+
+<p align="center">
+  <img src="images/rc_prototype.jpg" width="500">
 </p>
 
 <p align="justify">
-This design highlights the relationship between digital communication signals and physical system behavior. By integrating wireless communication, signal processing, and actuation, the project serves as a practical demonstration of communication system concepts applied to an embedded environment.
+The image above shows the fully assembled remote‑controlled robotic system. All electronic components are mounted on a compact metal chassis with a low center of gravity to provide mechanical stability. The layout allows efficient wiring, reliable power delivery, and proper signal interfacing between communication and control modules.
 </p>
 
 ---
 
-## Project Status
-✔ Communication system implemented  
-✔ Wireless serial transmission verified  
-✔ Control signals successfully applied  
-✔ Course requirement completed
+### Actual Weight Measurement
+
+<p align="center">
+  <img src="images/rc_weight_measurement.jpg" width="500">
+</p>
+
+<p align="justify">
+The image above shows the actual weight measurement of the completed system using a digital weighing scale. The recorded weight of the robot is <strong>475 grams</strong>. This measurement includes the chassis, microcontroller, motor driver, Bluetooth module, voltage regulator, battery, and all associated wiring in their fully operational configuration.
+</p>
+
+<p align="justify">
+Maintaining a total system weight of 475 grams provides a good balance between mechanical stability and portability. The mass distribution improves traction and controlled motion while remaining suitable for a compact embedded system developed for the Communication 2 course.
+</p>
+
+---
+
+## ✅ Project Status
+
+✔ Wireless communication implemented  
+✔ Motor control verified  
+✔ Power regulation stable  
+✔ System weight validated (475 g)  
+✔ Communication 2 requirement completed
