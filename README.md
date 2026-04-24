@@ -44,6 +44,8 @@ This design demonstrates key Communication 2 concepts such as signal transmissio
 
 ### RC Prototype
 
+<img width="1113" height="1280" alt="image" src="https://github.com/user-attachments/assets/ad88ae38-ad1c-4f93-99dc-4b3b0e478cbe" />
+
 <p align="center">
   <img src="images/rc_prototype.jpg" width="500">
 </p>
